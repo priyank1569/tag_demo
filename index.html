@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    {% for i in time %}
+    <h1>Hello </h1>
+    {% endfor %}
+
+    <br>
+    
+    <table style="width:100%; text-align:center; background-color: #D6EEEE;">
+        {%  for student in students %}
+       
+        <tr>
+            <td>{{forloop.counter}}</td>
+            <td>{{student.name}}</td>
+            <td>{{student.course}}</td>
+            <td>{{student.cgpa}}</td>
+            <td>{{student.age}}</td>
+        </tr>
+       
+        {% endfor %}
+    </table>
+</body>
+</html>
